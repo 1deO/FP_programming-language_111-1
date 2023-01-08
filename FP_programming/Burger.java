@@ -1,9 +1,9 @@
 
-public class Burgers extends Food {
+public class Burger extends Food {
 	
 	private String type;
 
-    public Burgers(int calories, int price, String type){
+    public Burger(int calories, int price, String type){
         super(calories, price);
         this.type = type;
     }

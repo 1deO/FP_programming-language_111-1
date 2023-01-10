@@ -9,5 +9,15 @@ public class Food {
         this.price = price;
     }
     
-
+    public int getPrice() {
+    	return price;
+    }
+    
+    public int getCalories() {
+    	return calories;
+    }
+    
+    public String getInfo() {
+    	return "Your order:";
+    }
 }

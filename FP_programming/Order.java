@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 public class Order{
 
@@ -11,6 +12,7 @@ public class Order{
     	this.orders = new ArrayList<Order>();
     }
     
+
     public Food getFood() {
     	return this.food;
     }
@@ -38,7 +40,7 @@ public class Order{
     	}
     	return sumPrice;
     }
-    
+
     public int getOrderCalories() {
     	int sumCalories = 0;
     	for(Order order : orders) {
@@ -56,4 +58,5 @@ public class Order{
     	totalOrder = totalOrder + "\n" + "TotalCost: " + getOrderCost() + "\n" + "TotalCalories" + getOrderCalories();
     	return totalOrder;
     }
+
 }

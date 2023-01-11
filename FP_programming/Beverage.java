@@ -5,6 +5,10 @@ public class Beverage extends Food {
         super(name, calories, price);
     }
     
+    public String getName() {
+    	return super.getName();
+    }
+	
     public int getPrice() {
     	return super.getPrice();
     }
@@ -13,8 +17,5 @@ public class Beverage extends Food {
     	return super.getCalories();
     }
     
-    public String getName() {
-    	return super.getName();
-    }
   
 }

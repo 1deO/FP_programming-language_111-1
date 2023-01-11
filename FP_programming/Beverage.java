@@ -1,11 +1,20 @@
-
 public class Beverage extends Food {
 	
-	private char size;
 
-    public Beverage(int calories, int price, char size){
-        super(calories, price);
-        this.size = size;
+    public Beverage(String name, int calories, int price){
+        super(name, calories, price);
     }
-
+    
+    public int getPrice() {
+    	return super.getPrice();
+    }
+    
+    public int getCalories() {
+    	return super.getCalories();
+    }
+    
+    public String getName() {
+    	return super.getName();
+    }
+  
 }

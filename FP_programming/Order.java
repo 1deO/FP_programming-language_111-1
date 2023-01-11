@@ -12,6 +12,15 @@ public class Order{
     	this.orders = new ArrayList<Order>();
     }
     
+
+    public Food getFood() {
+    	return this.food;
+    }
+    
+    public int getNumber() {
+    	return this.number;
+    }
+    
     public int getTotalPrice() {
     	return food.getPrice() * number;
     }
@@ -31,4 +40,23 @@ public class Order{
     	}
     	return sumPrice;
     }
+
+    public int getOrderCalories() {
+    	int sumCalories = 0;
+    	for(Order order : orders) {
+    		sumCalories += order.getTotalCalories();
+    	}
+    	return sumCalories;
+    }
+    
+    public String getInfo() {
+    	String totalOrder = "";
+    	for(Order order : orders) {
+    		totalOrder = totalOrder + order.getFood().getName() + " X " + order.getNumber() 
+    		+ " $ " + order.getTotalPrice() + " " + order.getTotalCalories() + "cal" + "\n";
+    	}
+    	totalOrder = totalOrder + "\n" + "TotalCost: " + getOrderCost() + "\n" + "TotalCalories" + getOrderCalories();
+    	return totalOrder;
+    }
+
 }

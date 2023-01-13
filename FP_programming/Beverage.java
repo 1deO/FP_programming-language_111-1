@@ -1,14 +1,15 @@
 public class Beverage extends Food {
 	
+	private String type;
 
-    public Beverage(String name, int calories, int price){
-        super(name, calories, price);
+    public Beverage(String type, String name, int calories, int price){
+        super(type, name, calories, price);
     }
     
-    public String getName() {
-    	return super.getName();
+    public String getType() {
+    	return this.type;
     }
-	
+    
     public int getPrice() {
     	return super.getPrice();
     }
@@ -17,5 +18,8 @@ public class Beverage extends Food {
     	return super.getCalories();
     }
     
+    public String getName() {
+    	return super.getName();
+    }
   
 }

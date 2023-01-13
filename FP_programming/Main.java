@@ -4,22 +4,16 @@ public class Main {
 
 	public static void main(String[] args) {
 		
+		Burger cheeseBurger = new Burger("burger", "CheeseBurger", 300, 60);
+		Burger chickenBurger = new Burger("burger", "ChickenBurger", 400, 65);
+		Burger fishBurger = new Burger("burger", "FishBurger", 390, 75);
 
-		Burger cheeseBurger = new Burger("CheeseBurger", 300, 60);
-		Burger chickenBurger = new Burger("ChickenBurger", 400, 65);
-		Burger fishBurger = new Burger("FishBurger", 390, 75);
-
-		Beverage sprite = new Beverage("Sprite", 140, 37);
-		Beverage coke = new Beverage("Coke", 150, 36);
-		Beverage fanta = new Beverage("Fanta", 150, 38);
+		Beverage sprite_S = new Beverage("beverage", "Sprite", 140, 37);
+		Beverage sprite_M = new Beverage("beverage", "Sprite", 200, 42);//choose 1
+		Beverage coke_S = new Beverage("beverage", "Coke", 150, 36);
+		Beverage coke_M = new Beverage("beverage", "Coke", 210, 41);//choose 1
 		
-		OrderList orders = new OrderList();
-		Order o1 = new Order(cheeseBurger, 2);
-		Order o2 = new Order(sprite, 1);
-		Order o3 = new Order(fanta, 1);
-		orders.addOrder(o1);
-		orders.addOrder(o2);
-		orders.addOrder(o3);
+		System.out.println("Order a hamburger with beverage can get a discount of 10 dollars off.");
 		
 		Scanner sc = new Scanner(System.in);
 		

@@ -1,10 +1,15 @@
 public class Burger extends Food {
+	
+	private String type;
 
-
-    public Burger(String name, int calories, int price){
-        super(name, calories, price);
+    public Burger(String type, String name, int calories, int price){
+        super(type, name, calories, price);
     }
 	
+    public String getType() {
+    	return this.type;
+    }
+    
     public String getName() {
     	return super.getName();
     }

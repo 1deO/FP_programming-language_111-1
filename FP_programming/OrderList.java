@@ -12,9 +12,24 @@ public class OrderList {
 	//Calculate the sum of cost for all orders.
 	public int getOrderCost() {
     	int sumPrice = 0;
+    	int totalHamburger = 0;
+    	int totalBeverage = 0;
     	for(Order order : orders) {
     		sumPrice += order.getTotalPrice();
+    		if(order.getFood().getType().equals("burger")) {
+    			totalHamburger++;
+        	}
+    		if(order.getFood().getType().equals("beverage")) {
+    			totalBeverage++;
+    		}
     	}
+    	
+    	if(totalHamburger >= totalBeverage) {
+    		sumPrice = sumPrice - totalBeverage * 10;
+    	}else {
+    		sumPrice = sumPrice - totalHamburger * 10;
+    	}
+    	
     	return sumPrice;
     }
 

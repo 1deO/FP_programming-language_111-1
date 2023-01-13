@@ -1,7 +1,7 @@
 
 public class Food {
 	
-    private String type;
+	private String type;
     private int calories;
     private int price;
     private String name;

@@ -24,7 +24,7 @@ public class OrderList {
     			totalBeverage += order.getNumber();
     		}
     	}
-    	
+    	//sales discount
     	if(totalBurger >= totalBeverage) {
     		sumPrice = sumPrice - totalBeverage * 10;
     	}else {
